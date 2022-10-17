@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h1 style="color:blue; font-family:timesnewroman; text-align:center; font-weight:bold;"><i>Task finished?</i></h1>
+        <div class="text-center">
+             <button class= "btn btn-danger" type="submit" >confirm</button>
+        </div>
+
+
+
+</form>
+{% endblock %}
+
+</body>
+</html>

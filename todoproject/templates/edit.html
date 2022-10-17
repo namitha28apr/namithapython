@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body style="background-color:DarkKhaki;">
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="POST">
+     {% csrf_token %}
+      {{f.as_p}}
+
+             <button class="btn btn-danger" type="submit" >OK</button>
+
+
+</form>
+{% endblock %}
+
+</body>
+</html>
